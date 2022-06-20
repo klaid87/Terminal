@@ -1,0 +1,91 @@
+GIT Homework 1
+
+Для выполнения задания у вас должен быть установлен для Windows - GitBash.
+Создан аккаунт в GitHub
+
+Все шаги сценария выполняйте в терминале GitBush, Terminal, в папке под гитом.
+
+Как отправить ДЗ на проверку.
+ 1. Создайте текстоовый файл как в первом ДЗ по Terminal.
+ 2. Сценарий перенесите в этот файл.
+ 3. На против каждого действия - напишите команду в GitBash
+
+Файл со сценарием и ссылку на свой гит хаб отправляйте менторам на проверку.
+
+JSON
+ 4. Создать внешний репозиторий c названием JSON.
+1.Зайти на Github
+2.Залогиниться
+3.Нажать new
+4.Ввести название репозитория JSON
+
+ 5. Клонировать репозиторий JSON на локальный компьютер.
+git clone git@github.com:klaid87/JSON.git
+
+ 6. Внутри локального JSON создать файл “new.json”.
+touch new.json
+
+ 7. Добавить файл под гит.
+git add new.json
+
+ 8. Закоммитить файл.
+git commit -m "add file new.json"
+
+ 9. Отправить файл на внешний GitHub репозиторий.
+git push
+3
+ 10. Отредактировать содержание файла “new.json” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате JSON.
+vim new.json
+var person {
+	firstName: 'Артём',
+	lastName: 'Насенник',
+        patronymic: 'Игоревич',
+	age: 35,
+	animals: 1,
+	salary: '3000$'
+}
+
+ 11. Отправить изменения на внешний репозиторий.
+git add new.json
+git commit -m "add info about me"
+git push
+
+ 12. Создать файл preferences.json
+touch preferences.json
+ 13. В файл preferences.json добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате JSON.
+vim preferences.json
+var preferences {
+	favoriteMovie: 'Start',
+	favoriteTvSeries: 'Supernatural',
+	favoriteFood: 'CaesarSalad',
+	favoriteTimeOfTheYear: 'spring',
+	favoriteCountry: 'Italy'
+}
+ 14. Создать файл sklls.json добавить информацию о скиллах которые будут изучены на курсе в формате JSON
+touch skils.json
+vim skils.json
+var skils {
+	"mySkils":["Git","JS","Postman","Android Studio"]
+}
+
+ 15. Отправить сразу 2 файла на внешний репозиторий.
+git add preferences.json skils.json
+git commit -m "add two files"
+git push
+
+ 16. На веб интерфейсе создать файл bug_report.json.
+1.Зайти на Github
+2.Нажать Add file.
+3.Выбрать Create a new file.
+
+ 17. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+Закомитить новый файл.
+
+ 18. На веб интерфейсе модифицировать файл bug_report.json, добавить баг репорт в формате JSON.
+Открыть файл, добавить изменения через веб-интерфейс
+
+ 19. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+Закомитить изменение.
+
+ 20. Синхронизировать внешний и локальный репозиторий JSON
+git pull
